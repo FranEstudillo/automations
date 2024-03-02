@@ -1,0 +1,438 @@
+{
+  "id": "7b495207-cacf-4a39-9c17-8867ee8940ef",
+  "version": "2.0",
+  "name": "Intercambios",
+  "url": "https://omnibusmexicanos.com.mx",
+  "tests": [{
+    "id": "f7710dda-e9ed-40af-be49-8816b4ae4cf2",
+    "name": "compra-sencillo",
+    "commands": [{
+      "id": "9f5c12e6-f301-4bb1-bed4-dd621e5838fa",
+      "comment": "",
+      "command": "open",
+      "target": "/gridsistemas/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8d32954c-5c28-4890-848f-8feb85fa9da4",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x720",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fd343b3a-05a8-4848-8194-53fc534944fe",
+      "comment": "",
+      "command": "click",
+      "target": "id=select2-cbx_estado-container",
+      "targets": [
+        ["id=select2-cbx_estado-container", "id"],
+        ["css=#select2-cbx_estado-container", "css:finder"],
+        ["xpath=//span[@id='select2-cbx_estado-container']", "xpath:attributes"],
+        ["xpath=//div[@id='intro1']/span/span/span/span", "xpath:idRelative"],
+        ["xpath=//span/span/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0028e36e-1029-41b1-a755-73bacc5cc74c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.select2-search__field",
+      "targets": [
+        ["css=.select2-search__field", "css:finder"],
+        ["xpath=//input[@type='search']", "xpath:attributes"],
+        ["xpath=//body[@id='cursor']/span/span/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "01ca3881-ca15-4bd4-b452-24d88ffbb9ed",
+      "comment": "",
+      "command": "type",
+      "target": "css=.select2-search__field",
+      "targets": [
+        ["css=.select2-search__field", "css:finder"],
+        ["xpath=//input[@type='search']", "xpath:attributes"],
+        ["xpath=//body[@id='cursor']/span/span/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": "mexico central norte"
+    }, {
+      "id": "bc3a80ad-31f9-47f3-8c3d-a1a9da885e16",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "css=.select2-search__field",
+      "targets": [
+        ["css=.select2-search__field", "css:finder"],
+        ["xpath=//input[@type='search']", "xpath:attributes"],
+        ["xpath=//body[@id='cursor']/span/span/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "1eb86c59-55e7-44ca-8aa5-d347ce4fdbd7",
+      "comment": "",
+      "command": "click",
+      "target": "id=select2-cbx_municipio-container",
+      "targets": [
+        ["id=select2-cbx_municipio-container", "id"],
+        ["css=#select2-cbx_municipio-container", "css:finder"],
+        ["xpath=//span[@id='select2-cbx_municipio-container']", "xpath:attributes"],
+        ["xpath=//div[@id='intro2']/span/span/span/span", "xpath:idRelative"],
+        ["xpath=//div[2]/span/span/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b8e205cf-66c7-4d3c-b43c-daa0aacf066b",
+      "comment": "",
+      "command": "type",
+      "target": "css=.select2-search__field",
+      "targets": [
+        ["css=.select2-search__field", "css:finder"],
+        ["xpath=//input[@type='search']", "xpath:attributes"],
+        ["xpath=//body[@id='cursor']/span/span/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": "aguascalientes c. autobus"
+    }, {
+      "id": "51d213c9-4bfc-4bd2-87b4-f7c0fa616f75",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "css=.select2-search__field",
+      "targets": [
+        ["css=.select2-search__field", "css:finder"],
+        ["xpath=//input[@type='search']", "xpath:attributes"],
+        ["xpath=//body[@id='cursor']/span/span/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "f21e3aad-2ca7-4ba2-abd4-fa72a93300ce",
+      "comment": "",
+      "command": "mouseDown",
+      "target": "id=fechasalida1",
+      "targets": [
+        ["id=fechasalida1", "id"],
+        ["name=fechSalida", "name"],
+        ["css=#fechasalida1", "css:finder"],
+        ["xpath=//input[@id='fechasalida1']", "xpath:attributes"],
+        ["xpath=//form[@id='formulario']/div/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4385e75a-a5ed-44eb-bfab-44b25dfb1004",
+      "comment": "",
+      "command": "click",
+      "target": "id=fechasalida1",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "361a66f8-1fcf-4f97-8ad0-9a16f06ca8d2",
+      "comment": "",
+      "command": "click",
+      "target": "id=cursor",
+      "targets": [
+        ["id=cursor", "id"],
+        ["css=#cursor", "css:finder"],
+        ["xpath=//body[@id='cursor']", "xpath:attributes"],
+        ["xpath=//body", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f5164b8d-3625-48b4-8370-ecc7bee541eb",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[contains(text(),'29')]",
+      "targets": [
+        ["linkText=29", "linkText"],
+        ["css=.ui-state-highlight", "css:finder"],
+        ["xpath=//a[contains(text(),'29')]", "xpath:link"],
+        ["xpath=//div[@id='ui-datepicker-div']/table/tbody/tr[5]/td[5]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[19]", "xpath:href"],
+        ["xpath=//td[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'29')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1b861095-6122-4b62-adb3-d8e85190165a",
+      "comment": "",
+      "command": "click",
+      "target": "id=adultos",
+      "targets": [
+        ["id=adultos", "id"],
+        ["name=adultos", "name"],
+        ["css=#adultos", "css:finder"],
+        ["xpath=//select[@id='adultos']", "xpath:attributes"],
+        ["xpath=//div[@id='coorAdul']/div/select", "xpath:idRelative"],
+        ["xpath=//td/div/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0be73ae7-5ea8-43c6-9e76-d351814a1dfd",
+      "comment": "",
+      "command": "select",
+      "target": "id=adultos",
+      "targets": [],
+      "value": "label=2"
+    }, {
+      "id": "8b4d59fb-efd1-47a4-bbc9-8b7438062c95",
+      "comment": "",
+      "command": "click",
+      "target": "id=fechasalida1",
+      "targets": [
+        ["id=fechasalida1", "id"],
+        ["name=fechSalida", "name"],
+        ["css=#fechasalida1", "css:finder"],
+        ["xpath=//input[@id='fechasalida1']", "xpath:attributes"],
+        ["xpath=//form[@id='formulario']/div/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d2873317-dc47-4f87-9432-41cc0e0cad89",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=29",
+      "targets": [
+        ["linkText=29", "linkText"],
+        ["css=.ui-state-highlight", "css:finder"],
+        ["xpath=//a[contains(text(),'29')]", "xpath:link"],
+        ["xpath=//div[@id='ui-datepicker-div']/table/tbody/tr[5]/td[5]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[19]", "xpath:href"],
+        ["xpath=//td[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'29')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "acd4b05d-8412-43e1-8b80-4309a4496189",
+      "comment": "",
+      "command": "click",
+      "target": "id=idboton",
+      "targets": [
+        ["id=idboton", "id"],
+        ["css=#idboton", "css:finder"],
+        ["xpath=//button[@id='idboton']", "xpath:attributes"],
+        ["xpath=//div[@id='coorBuscar']/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c89a664a-032e-4608-8cb9-4d203e8ff719",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "id=u52470_img",
+      "targets": [
+        ["id=u52470_img", "id"],
+        ["xpath=//img[@id='u52470_img']", "xpath:attributes"],
+        ["xpath=//div[@id='u52470']/img", "xpath:idRelative"],
+        ["xpath=//div[2]/div[3]/div/div/div/div/img", "xpath:position"]
+      ],
+      "value": "50000"
+    }, {
+      "id": "fe08ea47-59c5-4666-8a33-f9753291aaf5",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=u50849-4",
+      "targets": [
+        ["id=u50849-4", "id"],
+        ["xpath=//div[@id='u50849-4']", "xpath:attributes"],
+        ["xpath=//div[@id='u50437']/div[5]", "xpath:idRelative"],
+        ["xpath=//div[2]/div[3]/div/div/div/div[5]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "67ddfed4-d491-41f1-8ec5-8efa267c2fac",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@id='u50849-4']/p",
+      "targets": [
+        ["xpath=//div[@id='u50849-4']/p", "xpath:idRelative"],
+        ["xpath=//div[5]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'COMPRAR')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d2fbedc1-a050-4610-ae81-9ca6966f110e",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=.alert-box",
+      "targets": [],
+      "value": "10000"
+    }, {
+      "id": "17d9372d-118a-4e2c-a56f-17b54379a59d",
+      "comment": "",
+      "command": "click",
+      "target": "name=aceptar",
+      "targets": [
+        ["name=aceptar", "name"],
+        ["css=.aceptarBtn", "css:finder"],
+        ["xpath=//input[@name='aceptar']", "xpath:attributes"],
+        ["xpath=//div[@id='u74259']/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ceefdfb3-43c3-4c59-b00b-14096eb33177",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "id=u74322_img",
+      "targets": [
+        ["id=u74322_img", "id"],
+        ["css=#u74322_img", "css:finder"],
+        ["xpath=//img[@alt='salidaPiso1']", "xpath:img"],
+        ["xpath=//img[@id='u74322_img']", "xpath:attributes"],
+        ["xpath=//div[@id='u74322']/img", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/div/img", "xpath:position"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "0a49c438-307c-40b1-8e19-ba15ac8390e8",
+      "comment": "",
+      "command": "",
+      "target": "css=tr:nth-child(8) > .piso1:nth-child(1) > img",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1f37caac-672d-416a-8113-7470c9b1ea08",
+      "comment": "",
+      "command": "click",
+      "target": "css=.autobus tr:nth-child(3) > .piso1:nth-child(2) > img",
+      "targets": [
+        ["css=.autobus tr:nth-child(3) > .piso1:nth-child(2) > img", "css:finder"],
+        ["xpath=//div[@id='u74336']/div/table/tbody/tr[3]/td[2]/img", "xpath:idRelative"],
+        ["xpath=//tr[3]/td[2]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3da5ff93-275a-4168-bebc-dc96949f8b77",
+      "comment": "",
+      "command": "click",
+      "target": "id=datosname",
+      "targets": [
+        ["id=datosname", "id"],
+        ["name=nombre", "name"],
+        ["css=.datossalida:nth-child(2) #datosname", "css:finder"],
+        ["xpath=//input[@id='datosname']", "xpath:attributes"],
+        ["xpath=//div[@id='u76104']/div/table/tbody/tr[2]/td/input", "xpath:idRelative"],
+        ["xpath=//td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "841f4ed7-58df-4e33-9c3f-0b4ab1a4195a",
+      "comment": "",
+      "command": "type",
+      "target": "id=datosname",
+      "targets": [],
+      "value": "tester uno"
+    }, {
+      "id": "00f4a8cd-4fa0-4d1d-91c0-f09118947638",
+      "comment": "",
+      "command": "click",
+      "target": "css=.datossalida:nth-child(3) #datosname",
+      "targets": [
+        ["css=.datossalida:nth-child(3) #datosname", "css:finder"],
+        ["xpath=(//input[@id='datosname'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='u76104']/div/table/tbody/tr[3]/td/input", "xpath:idRelative"],
+        ["xpath=//tr[3]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "45c6a7df-222e-489e-9199-7b83f61b262e",
+      "comment": "",
+      "command": "type",
+      "target": "css=.datossalida:nth-child(3) #datosname",
+      "targets": [],
+      "value": "tester dos"
+    }, {
+      "id": "d5776272-3e44-442b-bd77-b3fc3b40764d",
+      "comment": "",
+      "command": "click",
+      "target": "id=u76080-4",
+      "targets": [
+        ["id=u76080-4", "id"],
+        ["css=#u76080-4", "css:finder"],
+        ["xpath=//div[@id='u76080-4']", "xpath:attributes"],
+        ["xpath=//div[@id='u76071']/div", "xpath:idRelative"],
+        ["xpath=//div[5]/div[2]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cb4e63a0-ea74-4a45-9067-0324390f12f9",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=.alert-box",
+      "targets": [
+        ["css=.alert-box", "css:finder"],
+        ["xpath=//div[@id='u74259']/div", "xpath:idRelative"],
+        ["xpath=//div[17]/div", "xpath:position"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "fab91c6b-4635-48ef-98bd-463967c977c8",
+      "comment": "",
+      "command": "click",
+      "target": "name=aceptar",
+      "targets": [
+        ["name=aceptar", "name"],
+        ["css=.aceptarBtn", "css:finder"],
+        ["xpath=//input[@name='aceptar']", "xpath:attributes"],
+        ["xpath=//div[@id='u74259']/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ed1e96d1-3927-4b0f-ae2c-ecb7ff2dc309",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "//div[@class='autobus']",
+      "targets": [
+        ["id=u74322_img", "id"],
+        ["css=#u74322_img", "css:finder"],
+        ["xpath=//img[@alt='salidaPiso1']", "xpath:img"],
+        ["xpath=//img[@id='u74322_img']", "xpath:attributes"],
+        ["xpath=//div[@id='u74322']/img", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/div/img", "xpath:position"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "d0ee6995-873f-41a1-b362-268e18c47693",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=td[class=\"piso1 disponible\"]",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "297a1769-b6e0-436b-9162-5b29516cab39",
+      "comment": "",
+      "command": "click",
+      "target": "css=td[class=\"piso1 disponible\"]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "02f42f8b-2ecb-4025-9dcb-2f615987730e",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=td[class=\"piso1 disponible\"]",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "dd4d94b6-fa22-48f8-93e0-623af377228e",
+      "comment": "",
+      "command": "click",
+      "target": "css=td[class=\"piso1 disponible\"]",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "14c07c44-d908-46b0-9432-71350f75ff27",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["f7710dda-e9ed-40af-be49-8816b4ae4cf2"]
+  }],
+  "urls": ["https://omnibusmexicanos.com.mx/"],
+  "plugins": []
+}
