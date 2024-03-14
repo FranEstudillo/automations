@@ -2,7 +2,7 @@
 describe("venta-diaria", () => {
   it("venta-diaria", function () {
     //pagina odm
-    cy.visit("http://omnibusmexicanos.com.mx/gridsistemas/");
+    cy.visit("https://odm.com.mx/gridsistemas.php");
 
     //seleccionamos origen
     cy.get("#select2-cbx_estado-container").click();
@@ -21,5 +21,32 @@ describe("venta-diaria", () => {
     cy.get("td.ui-datepicker-today").then(($td) => {
       // Hacer algo con el elemento seleccionado
     });
+
+    //seleccionamos los tipos de pasajeros
+    cy.get("#adultos").select("2");
+    cy.get("#idboton").click();
+
+    //validamos que nos pase a la pagina de selección de corrida
+    cy.wait(9000);
+
+    //seleccionamos la primera corrida
+    cy.get("#u50849-4").first().click();
+
+    cy.origin("http://webq.odm.com.mx", () => {
+      cy.on("uncaught:exception", (e) => {
+        if (e.message.includes("Things went bad")) {
+          // we expected this error, so let's ignore it
+          // and let the test continue return false
+        }
+      });
+    });
+    cy.visit("http://webq.odm.com.mx/odm/PASO1/PASO2/paso2.aspx");
+
+    //validamos el aviso de nombre de pasajero y asiento
+
+    //validamos el aviso de nombre de pasajero y asiento
+    cy.get("input.aceptarBtn").click();
+
+    //seleccionamos los primeros asientos disponibles
   });
 });
